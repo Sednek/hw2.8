@@ -1,9 +1,11 @@
-package com.example.demo.service;
+package com.example.demo.departmentsSerive;
+
+import com.example.demo.employeeService.Employee;
 
 import java.util.List;
 import java.util.Map;
 
-public interface EmployeeService {
+public interface DepartmentsService {
 
     Employee findMaxSalaryByDepartment(int department);
 
@@ -12,11 +14,4 @@ public interface EmployeeService {
     double calculateAllMonthSalariesByDepartment(int department);
 
     List<Employee> printEmployeeByDepartments(int department);
-
-    Map<Integer, List<Employee>> printEmployeesFromDepartments();
-
-    void addEmployee(Employee employee);
-
-    void addEmployee(String name, int department, int salary);
-
 }
